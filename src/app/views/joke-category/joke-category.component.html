@@ -1,13 +1,20 @@
-<div class="bar">
-  <app-select
-    [names]="categories"
-    [values]="categories"
-    multipleChoice="true"
-    label="Categories"
-    [(value)]="selectedCategories">
-  </app-select>
-  <app-chip *ngFor="let category of selectedCategories"
-            (delete)="selectedCategories.delete(category)">
-    {{category}}
-  </app-chip>
+<div class="container">
+  <div class="bar">
+    <app-select
+      [names]="categories"
+      [values]="categories"
+      multipleChoice="true"
+      label="Categories"
+      [(value)]="selectedCategories">
+    </app-select>
+    <app-chip *ngFor="let category of selectedCategories"
+              (delete)="selectedCategories.delete(category)">
+      {{category}}
+    </app-chip>
+  </div>
+  <div class="grid">
+    <div class="joke" *ngFor="let category of categories">
+
+    </div>
+  </div>
 </div>

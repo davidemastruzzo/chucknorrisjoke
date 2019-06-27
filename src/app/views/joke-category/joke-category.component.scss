@@ -1,11 +1,36 @@
-.bar {
-  margin: 10px;
-  display: flex;
-  height: 50px;
-  justify-content: flex-start;
-  align-items: center;
+@import "../../../variables";
+.container {
+  .bar {
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.71);
+    border: 1px solid $gray-lightest;
+    border-radius: 2px;
 
-  app-select {
-    margin-right: 5px;
+    app-select {
+      margin-right: 5px;
+    }
+  }
+
+  .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+    margin: 10px;
+
+    .joke {
+      width: 100%;
+      height: 200px;
+      background-color: whitesmoke;
+      border: 1px solid $gray-light;
+      box-shadow: 6px 8px 6px -8px #c2c2c2;
+      border-radius: 2px;
+    }
   }
 }
