@@ -9,12 +9,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RandomJokeComponent } from './views/random-joke/random-joke.component';
 import {ApiService} from './services/api.service';
+import { SpecificJokeComponent } from './views/specific-joke/specific-joke.component';
+import { ChucknorrisLogoComponent } from './components/chucknorris-logo/chucknorris-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextfieldComponent,
-    RandomJokeComponent
+    RandomJokeComponent,
+    SpecificJokeComponent,
+    ChucknorrisLogoComponent
   ],
   imports: [
     BrowserModule,
