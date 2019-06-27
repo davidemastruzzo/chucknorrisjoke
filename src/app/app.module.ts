@@ -7,6 +7,7 @@ import {TextfieldComponent} from './components/textfield/textfield.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ApiService} from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
