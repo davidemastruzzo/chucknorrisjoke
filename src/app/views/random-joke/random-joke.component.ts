@@ -9,27 +9,26 @@ import {ApiService} from '../../services/api.service';
   styleUrls: ['./random-joke.component.scss']
 })
 export class RandomJokeComponent implements OnInit, OnDestroy {
-  subscriptions: Subscription[] = [];
+  subscription: Subscription;
   currentJoke: Joke = null;
 
   constructor(private apiService: ApiService) {
   }
 
   ngOnInit() {
-    this.subscriptions.push(this.apiService.getRandomJoke().subscribe(joke => {
+    this.subscription = this.apiService.getRandomJoke().subscribe(joke => {
       this.currentJoke = joke;
-    }));
+    });
   }
 
   newRandomJoke() {
-    this.subscriptions.push(this.apiService.getRandomJoke().subscribe(joke => {
+    this.subscription.unsubscribe();
+    this.subscription = this.apiService.getRandomJoke().subscribe(joke => {
       this.currentJoke = joke;
-    }));
+    });
   }
 
   ngOnDestroy(): void {
-    this.subscriptions.forEach(subscription => {
-      subscription.unsubscribe();
-    });
+    this.subscription.unsubscribe();
   }
 }
