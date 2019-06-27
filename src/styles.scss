@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@import "variables";
+
+html {
+  box-sizing: border-box;
+}
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+input, textarea, button {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+fieldset {
+  border: none;
+  outline: none;
+}
+
+input,
+textarea,
+select {
+  font-size: 1rem;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  margin: 10px 0;
+  justify-content: space-between;
+}

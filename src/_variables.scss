@@ -1,0 +1,12 @@
+// The golden ratio
+$golden-ratio: 0.618;
+
+// Colors
+// Grayscale and brand colors for use across Bootstrap.
+$gray:                      #949497;
+
+$gray-darker:               darken($gray,36%);
+$gray-dark:                 darken($gray,24%);
+$gray-light:                lighten($gray,11%);
+$gray-lighter:              lighten($gray,22%);
+$gray-lightest:             lighten($gray,33%);

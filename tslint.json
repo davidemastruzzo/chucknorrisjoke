@@ -43,6 +43,7 @@
     "no-empty": false,
     "no-inferrable-types": [
       true,
+      "ignore-properties",
       "ignore-params"
     ],
     "no-non-null-assertion": true,
