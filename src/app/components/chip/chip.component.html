@@ -1,0 +1,7 @@
+<div class="tag"
+     [ngClass]="{
+     'size-small' : size === 'small',
+     'size-normal' : size === 'normal'}">
+  <app-icon-button (click)="emitDelete()">close</app-icon-button>
+  <ng-content></ng-content>
+</div>

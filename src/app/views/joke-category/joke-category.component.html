@@ -1,0 +1,13 @@
+<div class="bar">
+  <app-select
+    [names]="categories"
+    [values]="categories"
+    multipleChoice="true"
+    label="Categories"
+    [(value)]="selectedCategories">
+  </app-select>
+  <app-chip *ngFor="let category of selectedCategories"
+            (delete)="selectedCategories.delete(category)">
+    {{category}}
+  </app-chip>
+</div>

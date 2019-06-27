@@ -1,0 +1,11 @@
+.bar {
+  margin: 10px;
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+
+  app-select {
+    margin-right: 5px;
+  }
+}

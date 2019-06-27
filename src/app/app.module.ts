@@ -8,11 +8,23 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ApiService} from './services/api.service';
+import { JokeCategoryComponent } from './views/joke-category/joke-category.component';
+import {SelectComponent} from './components/select/select.component';
+import {IconComponent} from './components/icon/icon.component';
+import {CheckboxComponent} from './components/checkbox/checkbox.component';
+import {IconButtonComponent} from './components/icon-button/icon-button.component';
+import {ChipComponent} from './components/chip/chip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextfieldComponent
+    TextfieldComponent,
+    JokeCategoryComponent,
+    SelectComponent,
+    IconComponent,
+    CheckboxComponent,
+    IconButtonComponent,
+    ChipComponent
   ],
   imports: [
     BrowserModule,
