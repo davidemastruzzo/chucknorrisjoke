@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RandomJokeComponent } from './views/random-joke/random-joke.component';
+import {ApiService} from './services/api.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { RandomJokeComponent } from './views/random-joke/random-joke.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
