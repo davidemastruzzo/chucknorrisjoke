@@ -7,6 +7,7 @@ import {TextfieldComponent} from './components/textfield/textfield.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { RandomJokeComponent } from './views/random-joke/random-joke.component';
 import {ApiService} from './services/api.service';
 import { JokeCategoryComponent } from './views/joke-category/joke-category.component';
 import {SelectComponent} from './components/select/select.component';
@@ -19,6 +20,7 @@ import {ChipComponent} from './components/chip/chip.component';
   declarations: [
     AppComponent,
     TextfieldComponent,
+    RandomJokeComponent
     JokeCategoryComponent,
     SelectComponent,
     IconComponent,
