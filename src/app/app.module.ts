@@ -18,6 +18,7 @@ import {ChipComponent} from './components/chip/chip.component';
 import {SpecificJokeComponent} from './views/specific-joke/specific-joke.component';
 import {ChucknorrisLogoComponent} from './components/chucknorris-logo/chucknorris-logo.component';
 import {ClipboardModule} from 'ngx-clipboard';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ClipboardModule} from 'ngx-clipboard';
     IconButtonComponent,
     ChipComponent,
     SpecificJokeComponent,
-    ChucknorrisLogoComponent
+    ChucknorrisLogoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
