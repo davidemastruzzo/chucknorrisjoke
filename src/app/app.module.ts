@@ -18,6 +18,9 @@ import {ChipComponent} from './components/chip/chip.component';
 import {SpecificJokeComponent} from './views/specific-joke/specific-joke.component';
 import {ChucknorrisLogoComponent} from './components/chucknorris-logo/chucknorris-logo.component';
 import {ClipboardModule} from 'ngx-clipboard';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchComponent } from './components/search/search.component';
+import { SearchViewComponent } from './views/search-view/search-view.component';
 import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 @NgModule({
@@ -33,6 +36,9 @@ import { PageNotFoundComponent } from './views/page-not-found/page-not-found.com
     ChipComponent,
     SpecificJokeComponent,
     ChucknorrisLogoComponent,
+    NavbarComponent,
+    SearchComponent,
+    SearchViewComponent
     PageNotFoundComponent
   ],
   imports: [

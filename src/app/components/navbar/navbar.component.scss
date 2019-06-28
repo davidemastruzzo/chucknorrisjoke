@@ -1,0 +1,27 @@
+nav {
+  height: 3em;
+  background: #999999;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+app-search {
+  vertical-align: bottom;
+}
+
+#link-wrap, #search-wrap {
+  display: flex;
+  align-items: center;
+}
+
+#link-wrap > a {
+  margin: 0.5em;
+  text-decoration: none;
+  color: #0ff;
+}
+
+app-search {
+  display: flex;
+}
