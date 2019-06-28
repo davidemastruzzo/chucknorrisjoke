@@ -1,5 +1,10 @@
 <app-chucknorris-logo></app-chucknorris-logo>
 <div id="joke-details">
-  <p>{{joke.created_at}}</p>
-  <p>{{joke.value}}</p>
+  <div class="flex-middle joke-property">{{getDateOnly(joke.created_at)}}</div>
+  <div class="flex-middle joke-property">{{joke.value}}</div>
+  <div class="flex-middle" #container>
+    <button class="btn" type="button" ngxClipboard [cbContent]="joke.value" [container]="container">
+      Copy to clipboard
+    </button>
+  </div>
 </div>

@@ -23,8 +23,15 @@ export class SpecificJokeComponent implements OnInit, OnDestroy {
     });
   }
 
+  getDateOnly(dateString: string): string {
+    return dateString.substr(0, 10);
+  }
+
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
 
+  copyJokeToClipboard() {
+
+  }
 }
