@@ -1,6 +1,3 @@
-<div id="wrap-search ">
-  <input [(ngModel)]="searchString" type="text" id="search" placeholder="search..">
-  <button (click)="search()">
-    <app-icon color="#000000">search</app-icon>
-  </button>
-</div>
+<input [(ngModel)]="searchString" type="text" id="search" placeholder="search..">
+<app-icon-button (click)="search()" color="#000000">search</app-icon-button>
+
