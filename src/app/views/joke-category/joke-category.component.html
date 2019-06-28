@@ -9,7 +9,7 @@
       label="Categories">
     </app-select>
     <app-chip *ngFor="let category of selectedCategories"
-              (delete)="selectedCategories.delete(category)">
+              (delete)="selectedCategories.delete(category); categoryChange()">
       {{category}}
     </app-chip>
   </div>
