@@ -6,6 +6,7 @@ import {SpecificJokeComponent} from './views/specific-joke/specific-joke.compone
 import {PageNotFoundComponent} from './views/page-not-found/page-not-found.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/random', pathMatch: 'full'},
   {path: 'random', component: RandomJokeComponent},
   {path: 'categories', component: JokeCategoryComponent},
   {path: 'joke/:id', component: SpecificJokeComponent},
