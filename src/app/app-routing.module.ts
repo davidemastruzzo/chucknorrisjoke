@@ -7,7 +7,7 @@ import {SpecificJokeComponent} from './views/specific-joke/specific-joke.compone
 const routes: Routes = [
   {path: 'random', component: RandomJokeComponent},
   {path: 'categories', component: JokeCategoryComponent},
-  {path: 'specific-joke/:id', component: SpecificJokeComponent},
+  {path: 'joke/:id', component: SpecificJokeComponent},
 ];
 
 @NgModule({
