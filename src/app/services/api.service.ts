@@ -21,4 +21,7 @@ export class ApiService {
   getSpecificJoke(id: string): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/' + id);
   }
+  getRandomJoke(): Observable<Joke> {
+    return this.http.get<Joke>(this.url + '/jokes/random');
+  }
 }
