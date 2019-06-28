@@ -9,7 +9,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RandomJokeComponent} from './views/random-joke/random-joke.component';
 import {ApiService} from './services/api.service';
-import { JokeCategoryComponent } from './views/joke-category/joke-category.component';
+import {JokeCategoryComponent} from './views/joke-category/joke-category.component';
 import {SelectComponent} from './components/select/select.component';
 import {IconComponent} from './components/icon/icon.component';
 import {CheckboxComponent} from './components/checkbox/checkbox.component';
@@ -29,7 +29,7 @@ import {ClipboardModule} from 'ngx-clipboard';
     IconComponent,
     CheckboxComponent,
     IconButtonComponent,
-    ChipComponent
+    ChipComponent,
     SpecificJokeComponent,
     ChucknorrisLogoComponent
   ],
