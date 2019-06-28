@@ -3,9 +3,10 @@
     <app-select
       [names]="categories"
       [values]="categories"
+      [(value)]="selectedCategories"
+      (valueChange)="categoryChange()"
       multipleChoice="true"
-      label="Categories"
-      [(value)]="selectedCategories">
+      label="Categories">
     </app-select>
     <app-chip *ngFor="let category of selectedCategories"
               (delete)="selectedCategories.delete(category)">
@@ -13,8 +14,8 @@
     </app-chip>
   </div>
   <div class="grid">
-    <div class="joke" *ngFor="let category of categories">
-
+    <div class="joke" *ngFor="let joke of jokes">
+      {{joke.value}}
     </div>
   </div>
 </div>
