@@ -14,8 +14,11 @@
     </app-chip>
   </div>
   <div class="grid">
-    <div class="joke" *ngFor="let joke of filteredJokes">
-      {{joke.value}}
+    <div class="joke" *ngFor="let joke of filteredJokes" (click)="openJoke(joke)">
+      <span>{{joke.value}}</span>
+      <span *ngIf="selectedCategories.size > 1 && joke.categories.length !== 0" class="category">
+          {{joke.categories[0]}}
+      </span>
     </div>
   </div>
 </div>

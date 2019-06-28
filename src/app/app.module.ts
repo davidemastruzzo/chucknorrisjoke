@@ -21,6 +21,7 @@ import {ClipboardModule} from 'ngx-clipboard';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent } from './components/search/search.component';
 import { SearchViewComponent } from './views/search-view/search-view.component';
+import { PageNotFoundComponent } from './views/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { SearchViewComponent } from './views/search-view/search-view.component';
     NavbarComponent,
     SearchComponent,
     SearchViewComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

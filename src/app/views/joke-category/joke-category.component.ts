@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from '../../services/api.service';
 import {Joke} from '../../models/joke';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-joke-category',
@@ -14,7 +15,7 @@ export class JokeCategoryComponent implements OnInit {
   jokes: Joke[] = [];
   filteredJokes: Joke[] = [];
 
-  constructor(private apiService: ApiService) {
+  constructor(private apiService: ApiService, private router: Router) {
     this.selectedCategories.add('dev');
   }
 
@@ -35,5 +36,9 @@ export class JokeCategoryComponent implements OnInit {
         return selectedCategory === 'Other' ? joke.categories.length === 0 : joke.categories.includes(selectedCategory);
       });
     });
+  }
+
+  openJoke(joke: Joke) {
+    this.router.navigate(['/joke/' + joke.id]);
   }
 }

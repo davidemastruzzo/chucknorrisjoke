@@ -11,7 +11,7 @@
     <label class="label" *ngIf="!multipleChoice" [for]="id">{{label}}</label>
     <label class="anchor"></label>
     <div class="click-catcher" (click)="showDropdown = !showDropdown"></div>
-    <app-icon [ngClass]="{'rotate': showDropdown}">expand_more</app-icon>
+    <app-icon id="expand-more" [ngClass]="{'rotate': showDropdown}">expand_more</app-icon>
   </div>
   <fieldset [@slideIn] *ngIf="showDropdown" class="options-container" [ngStyle]="{'top':label ? '56px' : '33px'}">
     <div *ngFor="let optionName of names">
