@@ -22,8 +22,12 @@ export class ApiService {
   public getCategories(): Observable<string[]> {
     return this.http.get<string[]>(this.url + '/jokes/categories', {headers: this.defaultHeader});
   }
-
-  public getRandomJoke(): Observable<Joke> {
+  
+  getSpecificJoke(id: string): Observable<Joke> {
+    return this.http.get<Joke>(this.url + '/jokes/' + id);
+  }
+  
+  getRandomJoke(): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/random');
   }
 

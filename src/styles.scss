@@ -63,3 +63,8 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0.5em;
   cursor: pointer;
 }
+
+.flex-middle {
+  display: flex;
+  justify-content: space-around;
+}

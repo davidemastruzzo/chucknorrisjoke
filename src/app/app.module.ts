@@ -1,8 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
 import {TextfieldComponent} from './components/textfield/textfield.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -15,6 +15,9 @@ import {IconComponent} from './components/icon/icon.component';
 import {CheckboxComponent} from './components/checkbox/checkbox.component';
 import {IconButtonComponent} from './components/icon-button/icon-button.component';
 import {ChipComponent} from './components/chip/chip.component';
+import {SpecificJokeComponent} from './views/specific-joke/specific-joke.component';
+import {ChucknorrisLogoComponent} from './components/chucknorris-logo/chucknorris-logo.component';
+import {ClipboardModule} from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,8 @@ import {ChipComponent} from './components/chip/chip.component';
     CheckboxComponent,
     IconButtonComponent,
     ChipComponent
+    SpecificJokeComponent,
+    ChucknorrisLogoComponent
   ],
   imports: [
     BrowserModule,
@@ -34,11 +39,13 @@ import {ChipComponent} from './components/chip/chip.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClipboardModule
   ],
   providers: [
     ApiService
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

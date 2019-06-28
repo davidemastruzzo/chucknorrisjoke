@@ -1,0 +1,17 @@
+#joke-details {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joke-property {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+
+#copy-btn {
+  margin-top: 0.5em;
+  font-size: 3em;
+}
