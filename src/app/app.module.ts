@@ -9,6 +9,12 @@ import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RandomJokeComponent} from './views/random-joke/random-joke.component';
 import {ApiService} from './services/api.service';
+import { JokeCategoryComponent } from './views/joke-category/joke-category.component';
+import {SelectComponent} from './components/select/select.component';
+import {IconComponent} from './components/icon/icon.component';
+import {CheckboxComponent} from './components/checkbox/checkbox.component';
+import {IconButtonComponent} from './components/icon-button/icon-button.component';
+import {ChipComponent} from './components/chip/chip.component';
 import {SpecificJokeComponent} from './views/specific-joke/specific-joke.component';
 import {ChucknorrisLogoComponent} from './components/chucknorris-logo/chucknorris-logo.component';
 import {ClipboardModule} from 'ngx-clipboard';
@@ -18,6 +24,12 @@ import {ClipboardModule} from 'ngx-clipboard';
     AppComponent,
     TextfieldComponent,
     RandomJokeComponent,
+    JokeCategoryComponent,
+    SelectComponent,
+    IconComponent,
+    CheckboxComponent,
+    IconButtonComponent,
+    ChipComponent
     SpecificJokeComponent,
     ChucknorrisLogoComponent
   ],
