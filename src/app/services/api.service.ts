@@ -18,6 +18,9 @@ export class ApiService {
   constructor(private http: HttpClient) {
   }
 
+  getSpecificJoke(id: string): Observable<Joke> {
+    return this.http.get<Joke>(this.url + '/jokes/' + id);
+  }
   getRandomJoke(): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/random');
   }
