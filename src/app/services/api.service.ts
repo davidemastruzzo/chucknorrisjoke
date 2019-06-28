@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
 import {Joke} from '../models/joke';
 import {Observable} from 'rxjs';
+import {SearchResponse} from '../models/searchResponse';
 
 @Injectable({
   providedIn: 'root'
@@ -26,9 +27,9 @@ export class ApiService {
     return this.http.get<Joke>(this.url + '/jokes/random');
   }
 
-  public getAllJokes(): Observable<Joke[]> {
+  public getAllJokes(): Observable<SearchResponse> {
     let params = new HttpParams();
     params = params.append('query', 'chuck');
-    return this.http.get<Joke[]>(this.url + '/jokes/search', {headers: this.defaultHeader, params});
+    return this.http.get<SearchResponse>(this.url + '/jokes/search', {headers: this.defaultHeader, params});
   }
 }
