@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'random', component: RandomJokeComponent},
   {path: 'categories', component: JokeCategoryComponent},
   {path: 'joke/:id', component: SpecificJokeComponent},
-  {path: 'search', component: SearchViewComponent}
+  {path: 'search', component: SearchViewComponent},
   {path: '**', component: PageNotFoundComponent}
 ];
 
