@@ -22,11 +22,11 @@ export class ApiService {
   public getCategories(): Observable<string[]> {
     return this.http.get<string[]>(this.url + '/jokes/categories', {headers: this.defaultHeader});
   }
-  
+
   getSpecificJoke(id: string): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/' + id);
   }
-  
+
   getRandomJoke(): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/random');
   }
@@ -35,5 +35,9 @@ export class ApiService {
     let params = new HttpParams();
     params = params.append('query', 'chuck');
     return this.http.get<SearchResponse>(this.url + '/jokes/search', {headers: this.defaultHeader, params});
+  }
+
+  public searchJokes(query: string): Observable<SearchResponse> {
+    return this.http.get<SearchResponse>(this.url + '/jokes/search?query=' + query);
   }
 }

@@ -18,6 +18,9 @@ import {ChipComponent} from './components/chip/chip.component';
 import {SpecificJokeComponent} from './views/specific-joke/specific-joke.component';
 import {ChucknorrisLogoComponent} from './components/chucknorris-logo/chucknorris-logo.component';
 import {ClipboardModule} from 'ngx-clipboard';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SearchComponent } from './components/search/search.component';
+import { SearchViewComponent } from './views/search-view/search-view.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import {ClipboardModule} from 'ngx-clipboard';
     IconButtonComponent,
     ChipComponent,
     SpecificJokeComponent,
-    ChucknorrisLogoComponent
+    ChucknorrisLogoComponent,
+    NavbarComponent,
+    SearchComponent,
+    SearchViewComponent
   ],
   imports: [
     BrowserModule,
