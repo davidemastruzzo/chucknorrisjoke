@@ -1,14 +1,31 @@
+@import "../../../variables";
+
 nav {
   height: 3em;
-  background: #999999;
+  width: 100vw;
+  background: white;
   display: flex;
   justify-content: space-between;
   padding-left: 1em;
   padding-right: 1em;
+  box-shadow: 0px 8px 6px -8px #c2c2c2;
+
+  #link-wrap {
+    a {
+      padding: 10px;
+    }
+    a:hover {
+      color: $gray-darker;
+      transition: background-color 0.2s;
+      border-radius: 5%;
+      background-color: $gray-lightest;
+    }
+  }
 }
 
 app-search {
   vertical-align: bottom;
+  border: 1px solid $gray-light
 }
 
 #link-wrap, #search-wrap {
@@ -19,7 +36,7 @@ app-search {
 #link-wrap > a {
   margin: 0.5em;
   text-decoration: none;
-  color: #0ff;
+  color: $gray-dark;
 }
 
 app-search {

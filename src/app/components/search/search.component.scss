@@ -1,7 +1,10 @@
+@import "../../../variables";
+
 input {
   padding: 5px;
   border: #555555;
   border-radius: 5px;
+  color: $gray-dark;
 }
 
 #search {
