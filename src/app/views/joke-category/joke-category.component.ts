@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from '../../services/api.service';
 import {Joke} from '../../models/joke';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-joke-category',
@@ -39,6 +39,6 @@ export class JokeCategoryComponent implements OnInit {
   }
 
   openJoke(joke: Joke) {
-    this.router.navigate(['/joke/' + joke.id]);
+    this.router.navigate(['/joke/', joke.id]);
   }
 }

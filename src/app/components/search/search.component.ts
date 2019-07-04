@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit, OnDestroy {
       this.searchResponseSubscription.unsubscribe();
     }
     this.searchResponseSubscription = this.apiService.searchJokes(this.searchString).subscribe(searchResponse => {
-      this.searchService.jokes.next(searchResponse.result);
+      this.searchService.jokes = searchResponse.result;
       this.router.navigate(['/search']);
     });
   }
