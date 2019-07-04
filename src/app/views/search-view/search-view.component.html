@@ -1,5 +1,5 @@
 <div class="grid">
   <div class="joke" *ngFor="let joke of searchService.jokes" routerLink="/joke/{{joke.id}}">
-    {{joke.value}}
+    <span>{{joke.value}}</span>
   </div>
 </div>
