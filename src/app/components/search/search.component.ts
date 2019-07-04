@@ -32,4 +32,10 @@ export class SearchComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.searchResponseSubscription.unsubscribe();
   }
+
+  isEnter($event: KeyboardEvent) {
+    if ($event.key === 'Enter') {
+      this.search();
+    }
+  }
 }
