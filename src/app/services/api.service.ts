@@ -9,7 +9,7 @@ import {SearchResponse} from '../models/searchResponse';
 })
 export class ApiService {
 
-  url = 'https://api.chucknorris.io';
+  url: string = 'https://api.chucknorris.io';
 
 
   private defaultHeader = new HttpHeaders({
@@ -23,11 +23,11 @@ export class ApiService {
     return this.http.get<string[]>(this.url + '/jokes/categories', {headers: this.defaultHeader});
   }
 
-  getSpecificJoke(id: string): Observable<Joke> {
+  public getSpecificJoke(id: string): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/' + id);
   }
 
-  getRandomJoke(): Observable<Joke> {
+  public getRandomJoke(): Observable<Joke> {
     return this.http.get<Joke>(this.url + '/jokes/random');
   }
 
